@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise1</title>
+</head>
+<body>
+    <div id="newtext">
+        <h4>The XMLHttpRequest Object</h4>
+        <button onclick="load()">Change Content</button>
+    </div>
+
+
+
+    <script>
+        function load(){
+            let text = new XMLHttpRequest();
+
+            text.onreadystatechange = ()=>{
+                if(text.status == 200 && text.readyState == 4)
+                document.getElementById("newtext").innerHTML=text.responseText;
+            };
+
+            text.open("GET","./text.txt",true);
+            text.send();
+        }
+    </script>
+</body>
+</html>
