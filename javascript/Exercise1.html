@@ -1,0 +1,103 @@
+<!----Exercise1. Create a simple login page with username and pass word field and a login button.
+ On click of login call java script to show popup message as "Welcome  username".-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exercise1</title>
+    
+    <style>
+        Body {
+            font-family: Calibri, Helvetica, sans-serif;
+
+        }
+
+        button {
+            background-color: #4CAF50;
+            width: 100%;
+            color: black;
+            padding: 15px;
+            margin: 10px 0px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button[type=submit] {
+            width: 40%;
+            margin: 0 30%;
+        }
+
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            margin: 8px 0;
+            padding: 12px 20px;
+            display: inline-block;
+            border: 2px solid green;
+            box-sizing: border-box;
+        }
+
+        button:hover {
+            opacity: 0.7;
+        }
+
+        .cancelbtn {
+            width: auto;
+            padding: 10px 18px;
+            margin: 10px 5px;
+        }
+
+
+        .container {
+            width: 600px;
+            margin: 0 auto;
+            padding: 25px;
+            background-color: lightblue;
+        }
+
+        .container>div{
+            margin: 10px 0 -10px 0;
+            display: flex;            
+        }
+
+        .container div div:nth-child(1){
+            width: 50%;            
+        }
+
+        .container div div:nth-child(2){
+            margin: 0 0 0 180px;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>Login</h1>
+    </center>
+    <form>
+        <div class="container">
+            <label>Username : </label>
+            <input type="text" placeholder="Enter Username" name="username" required id="username">
+            <label>Password : </label>
+            <input type="password" placeholder="Enter Password" name="password" required>
+            <button onclick="Login()" type="submit">Login</button>
+            <div>
+               <div><input type="checkbox" checked="checked"> Remember me </div>
+                <div>Forgot <a href="#"> password? </a></div>
+            </div>
+        </div>
+    </form>
+    <script type ="text/javascript">
+        function Login() {
+            let name = document.getElementById("username");
+          alert ("Welcome"+" "+name.value+ " "+"your login successfully");
+        }
+    </script>
+</body>
+
+</html>

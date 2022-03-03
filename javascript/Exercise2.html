@@ -1,0 +1,73 @@
+<!--Exercise2: Create a student info form. Collect information like student name,age,year of passing, name of collage and Submit button. 
+On click of submit display the information entered in a alert box.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise2</title>
+    <style>
+        .Body {
+            font-family: Calibri, Helvetica, sans-serif;
+
+        }
+        .button {
+            background-color: #0293f3;
+            width: 100%;
+            color: black;
+            padding: 15px;
+            margin: 10px 0px;
+            border: none;
+            cursor: pointer;
+        }
+
+      .container {
+            width: 600px;
+            margin: 0 auto;
+            padding: 25px;
+            background-color: rgba(230, 173, 211, 0.815);
+        }
+        
+
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            margin: 8px 0;
+            padding: 12px 20px;
+            display: inline-block;
+            border: 2px solid rgb(0, 0, 0);
+            box-sizing: border-box;
+        }
+
+        button:hover {
+            opacity: 0.7;
+        }
+    
+        </style>
+</head>
+<body>
+    <!-- <form action="#" > -->
+            <div class="container">
+            <label>Student Name</label><br>
+            <input type="text" placeholder="Student Name" name="StudentName" >
+             <label>Age</label> <br>
+            <input type="text" placeholder="Age" name="Age" required  class="input" >
+            <label>Year of passing</label><br>
+            <input type="text" placeholder="Year of passing" name="Yearofpassing" required > <br>
+            <label>Name Of College</label><br>
+            <input type="text" placeholder="Name Of College" name="NameOfCollege" required  ><br>
+           <button onclick="submit()">Submit</button>
+        </div>
+    <!-- </form> -->
+    
+
+    <script>        
+        function submit(){
+           
+          alert("Student Name:"+document.getElementsByName("StudentName")[0].value+"\nAge:"+document.getElementsByName("Age")[0].value+"\nYear of passing:"+document.getElementsByName("Yearofpassing")[0].value+"\nName Of College:"+document.getElementsByName("NameOfCollege")[0].value);
+        }
+    </script>
+</body>
+</html>
