@@ -1,0 +1,37 @@
+.listclass{
+    width: 600px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.showclass{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr>th,td{
+    border: 1px solid black;
+}
+tr>td>a{
+    text-decoration: none;
+}
+
+tr>td:nth-child(1){
+    width: 40%;
+}
+tr>td:nth-child(2){
+    width: 40%;
+}
+
+.student>td:nth-child(1){
+    width: 10%;
+}
+
+
+.rules>li{
+    text-align: justify;
+    margin: 5px 0;
+    padding: 0 5px;
+
+}
+

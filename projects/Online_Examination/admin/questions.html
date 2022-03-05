@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/css.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="menu">
+            <li><a href="./class.html">Home</a></li>
+            <li><a href="./student.html">Students</a></li>
+            <li><a href="./questionbank.html">Question Banks</a></li>            
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </nav>
+
+    <section class="questions">
+        <table class="questions">
+            <tr>
+                <th>Question</th>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+                <th>D</th>
+                <th>Answer</th>
+                <th>&nbsp;</th>
+            </tr>
+            <tr>
+                <td>Which is the capital of india?</td>
+                <td>Mumbai</td>
+                <td>Nagpur</td>
+                <td>Aurangabad</td>
+                <td>Pune</td>
+                <td>A</td>
+                <td><a href="#">delete</a></td>
+            </tr>
+            <tr>
+                <td>Which is the capital of india?</td>
+                <td>Mumbai</td>
+                <td>Nagpur</td>
+                <td>Aurangabad</td>
+                <td>Pune</td>
+                <td>A</td>
+                <td><a href="#">delete</a></td>
+            </tr>
+            <tr>
+                <td>Which is the capital of india?</td>
+                <td>Mumbai</td>
+                <td>Nagpur</td>
+                <td>Aurangabad</td>
+                <td>Pune</td>
+                <td>A</td>
+                <td><a href="#">delete</a></td>
+            </tr>
+            <tr>
+                <td>Which is the capital of india?</td>
+                <td>Mumbai</td>
+                <td>Nagpur</td>
+                <td>Aurangabad</td>
+                <td>Pune</td>
+                <td>A</td>
+                <td><a href="#">delete</a></td>
+            </tr>
+            <tr>
+                <td>Which is the capital of india?</td>
+                <td>Mumbai</td>
+                <td>Nagpur</td>
+                <td>Aurangabad</td>
+                <td>Pune</td>
+                <td>A</td>
+                <td><a href="#">delete</a></td>
+            </tr>
+        </table>
+
+        <div class="btns">
+            <button class="addbank" onclick="loadwd()">Add Question</button>
+            <button class="cls" type="button">Remove</button>
+        </div>
+
+    </section>
+
+    <section class="layer" id="fwd" hidden>
+        <div class="addbankform view">
+            <div class="addclasstitle">
+                Add Question
+                <div class="closer cl">
+                    <div>X</div>
+                </div>
+            </div>
+
+            <div>
+                <form action="#" method="POST" class="form">
+                    <fieldset>
+                        <legend>Question</legend>
+                        <input type="text" name="classname" required="required">
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Option A</legend>
+                        <input type="text" name="opA">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Option B</legend>
+                        <input type="text" name="opA">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Option C</legend>
+                        <input type="text" name="opA">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Option D</legend>
+                        <input type="text" name="opA">
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Answer</legend>
+                        <select name="ans" id="ans">
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                        </select>
+                    </fieldset>
+
+                    <div class="btns">
+                        <button type="submit">Submit</button>
+                        <button class="cl" type="button" class="cl">close</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+    <script src="../js/js.js"></script>
+</body>
+
+</html>

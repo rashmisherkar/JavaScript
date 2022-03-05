@@ -1,0 +1,47 @@
+.timer{
+    text-align: right;
+}
+
+.question{
+    margin: 40px auto;
+    display: flex;
+}
+
+.qn{
+    font-weight:bold;
+    margin: 0 5px;
+}
+
+.options{
+    display: flex;
+    flex-direction: column;
+}
+
+.allqt{
+    width: 600px;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    margin: 15px auto;
+    width: 80%;
+    overflow: hidden;
+}
+
+.ico{
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    width: 18px;
+    margin:0 3%;
+}
+
+.comp{
+    background-color: green;
+}
+
+.cur{
+    background-color: blue;
+}

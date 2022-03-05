@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/css.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <title>Fee Report</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="menu">
+            <li><a href="./class.html">Home</a></li>
+            <li><a href="./student.html">Students</a></li>
+            <li><a href="./questionbank.html">Question Banks</a></li>            
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </nav>
+
+    <section class="view">
+        <table class="qbanks">
+            <tr>
+                <th>Subject name</th>
+                <th>Class</th>
+                <th>Questions</th>
+                <th>&nbsp;</th>
+            </tr>
+
+            <!-- here shows all the question bank -->
+            <tr>
+                <td>Java</td>
+                <td>MCA II</td>
+                <td>50</td>
+                <td><a href="./questions.html">view</a></th>
+            </tr>
+            <tr>
+                <td>Java</td>
+                <td>MCA II</td>
+                <td>50</td>
+                <td><a href="./questions.html">view</a></th>
+            </tr>
+
+            <tr>
+                <td>Java</td>
+                <td>MCA II</td>
+                <td>50</td>
+                <td><a href="./questions.html">view</a></th>
+            </tr>
+            <tr>
+                <td>Java</td>
+                <td>MCA II</td>
+                <td>50</td>
+                <td><a href="./questions.html">view</a></th>
+            </tr>
+        </table>
+
+        <button class="addbank" onclick="loadwd()">Add Bank</button>
+    </section>
+
+    <section class="layer" id="fwd" hidden>
+        <div class="addbankform view">
+            <div class="addclasstitle">
+                Add Questions Bank
+                <div class="closer cl">
+                    <div>X</div>
+                </div>
+            </div>
+
+            <div>
+                <form action="#" method="POST" class="form">
+                    <br> <br>
+                    <fieldset>
+                        <legend>Subject Name</legend>
+                        <input type="text" name="classname" required="required">
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Class</legend>
+                        <select name="class" id="class">
+                            <option value="0">Select class</option>
+                            <option value="#">MCA I</option>
+                            <option value="#">MCA II</option>
+                        </select>
+                    </fieldset>
+
+                    <div class="btns">
+                        <button type="submit">Submit</button>
+                        <button class="cl" type="button">close</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+    <script src="../js/js.js"></script>
+</body>
+
+</html>

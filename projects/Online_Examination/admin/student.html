@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students.....</title>
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/class.css">
+    <link rel="stylesheet" href="../css/css.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="menu">
+            <li><a href="./class.html">Home</a></li>
+            <li><a href="./student.html">Students</a></li>
+            <li><a href="./questionbank.html">Question Banks</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </nav>
+    <div class="listclass">
+        <table class="showclass">
+            <tr class="student">
+                <th>ID</th>
+                <th>Name</th>
+                <th>Contact No</th>
+                <th>Password</th>
+                <th>&nbsp;</th>
+                <th>&nbsp;</th>
+            </tr>
+            <tr class="student">
+                <td>1</td>
+                <td>Rashmi</td>
+                <td>9284727411</td>
+                <td>Rashmi123</td>
+                <td><button type="button" onclick="loadwd()">View</button></td>
+                <td><button type="button">Delete</button></td>
+            </tr>
+            <tr class="student">
+                <td>2</td>
+                <td>Ganesh</td>
+                <td>8685848382</td>
+                <td>Ganesh123</td>
+                <td><button type="button" onclick="loadwd()">View</button></td>
+                <td><button type="button">Delete</button></td>
+            </tr>
+            <tr class="student">
+                <td>3</td>
+                <td>shilpa</td>
+                <td>8888181761</td>
+                <td>shilpa123</td>
+                <td><button type="button" onclick="loadwd()">View</button></td>
+                <td><button type="button">Delete</button></td>
+            </tr>
+        </table>
+        <div class="btns">
+            <button type="button">Remove Class</button>
+            <button type="button" onclick="loadwd()">Add Student</button>
+        </div>
+    </div>
+
+
+    <section class="layer" id="fwd" hidden>
+        <div class="addbankform">
+            <div class="addclasstitle">
+                Add / Update Student
+                <div class="closer cl">
+                    <div>X</div>
+                </div>
+            </div>
+            <form action="#" method="post" class="form">
+                <fieldset>
+                    <legend>ID</legend>
+                    <input type="text" placeholder="Enter ID" name="id" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Name</legend>
+                    <input type="Name" placeholder="Enter Name" name="Name" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Contact</legend>
+                    <input type="phno" placeholder="contact no" name="phno"  required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Password</legend>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Repeat Password</legend>
+                    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>s
+                </fieldset>
+                <div class="btns">
+                    <button type="submit">Save</button>
+                    <button type="reset">Reset</button>
+                    <button class="cl" type="button">Close</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="../js/js.js"></script>
+</body>
+
+</html>
